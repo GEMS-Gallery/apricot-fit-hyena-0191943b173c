@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Courier Prime', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #808080;
+}
+
+.post-title {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+.post-content {
+  white-space: pre-wrap;
+}
+
+.create-post-form {
+  margin-top: 20px;
+}
+
+.create-post-form input,
+.create-post-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #808080;
+}
+
+.create-post-form button {
+  background-color: #808080;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
