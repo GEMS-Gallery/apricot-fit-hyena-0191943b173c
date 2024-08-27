@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
 body {
   margin: 0;
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: #000000;
+  color: #00ff00;
 }
 
 .container {
@@ -28,11 +26,11 @@ body {
 .post-item {
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #808080;
+  border: 1px solid #00ff00;
 }
 
 .post-title {
-  color: #000000;
+  color: #00ff00;
   text-decoration: none;
 }
 
@@ -49,14 +47,14 @@ body {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
-  background-color: #FFFFFF;
-  color: #000000;
-  border: 1px solid #808080;
+  background-color: #000000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
 }
 
 .create-post-form button {
-  background-color: #808080;
-  color: #FFFFFF;
+  background-color: #00ff00;
+  color: #000000;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
@@ -64,11 +62,15 @@ body {
 
 .blinking-cursor {
   animation: blink 1s step-end infinite;
-  color: #000000;
 }
 
 @keyframes blink {
   50% {
     opacity: 0;
   }
+}
+
+.terminal-prompt::before {
+  content: '> ';
+  color: #00ff00;
 }
